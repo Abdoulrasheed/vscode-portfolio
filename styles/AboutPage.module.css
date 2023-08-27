@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 12vh;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.about {
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.leftScreen {
+  word-break: break-all;
+  margin: 10px 50px 10px;
+}
+
+.leftScreen ul {
+  margin-left: -5px;
+}
+
+.leftScreen ul li {
+  margin: 0px 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 4px 0px;
+  display: inline-block;
+}
+
+.leftScreen ul li span {
+  border: 1px solid #0bceaf;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.leftScreen ul li span:hover {
+  background-color: rgb(22, 158, 138) !important;
+  color: rgb(0, 0, 0);
+}
+
+.resumeButton {
+  background-color: rgb(11, 206, 175);
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 12px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  box-shadow: rgba(0, 123, 255, 0.25) 0px 0px 0px 3.2px;
+}
+
+.skillList {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 70vh;
+  }
+
+  .leftScreen {
+    margin: 30px 0px;
+  }
+
+  .resumeButton {
+    align-self: center;
+  }
+}

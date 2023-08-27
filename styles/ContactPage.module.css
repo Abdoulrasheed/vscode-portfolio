@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5vh;
+  background-image: url("../public/map-bg.png");
+}
+.rightScreen input,
+.rightScreen textarea {
+  color: #fff;
+  background-color: transparent;
+  padding: 20px;
+  width: 35vw;
+  border-width: 1px;
+  border-color: #b8b8ba;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0px 0px 2px 0px,
+    rgba(255, 255, 255, 0.8) 0px 0px 1px 1px;
+}
+.card {
+  -webkit-box-shadow: -1rem 0 3rem #000;
+  box-shadow: -1rem 0 3rem #000;
+  word-break: break-all;
+  padding: 20px;
+  width: 35vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  background: var(--sidebar-bg);
+  margin-bottom: 25px;
+}
+.cardBody,
+.cardIcon {
+  margin-left: 50px;
+}
+.cardBody a {
+  color: #fff;
+  text-decoration: none;
+}
+.cardBody h2 {
+  margin-bottom: 10px;
+}
+.cardBody p {
+  padding-top: 5px;
+}
+.cardBody p a {
+  color: rgb(197, 128, 243);
+}
+.button {
+  width: 35vw;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: solid;
+  background-color: rgb(11, 206, 175);
+}
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  .card {
+    display: flex;
+    width: 70vw;
+    padding: 10px;
+    height: 100px;
+  }
+  .cardBody h2 {
+    display: none;
+  }
+  .cardIcon {
+    margin-left: 10px;
+  }
+  .rightScreen input,
+  .rightScreen textarea {
+    width: 70vw;
+  }
+  .button {
+    width: 70vw;
+  }
+}

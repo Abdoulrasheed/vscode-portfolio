@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  display: flex;
+  width: 75vw;
+  height: 100vh;
+}
+
+.cardHead {
+  background-color: var(--article-bg);
+  padding: 20px;
+  background: linear-gradient(
+    55deg,
+    rgba(0, 0, 0, 0.22),
+    rgba(255, 255, 255, 0.25)
+  );
+}
+
+.label {
+  color: var(--accent-color);
+  font-size: 12px;
+}
+
+.stackContainer {
+  margin-top: 25px;
+}
+
+.cardHead li {
+  margin-right: 10px;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.cardHead ul {
+  margin-left: -5px;
+}
+
+.cardHead ul li {
+  margin: 0px 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  display: inline-block;
+  border: 1px solid #0bceaf;
+}
+
+.cardHead ul li:hover {
+  color: var(--accent-color);
+}
+
+.cardImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.cardImage {
+  width: 10vw;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cardImage:hover {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.card p,
+.card summary {
+  font-size: 12px;
+  margin: 15px 0;
+}
+
+.urls {
+  width: 60vw;
+  display: flex;
+  list-style: none;
+}
+
+.urls p {
+  margin-right: 30px;
+}
+
+.urls p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.urls p a:hover {
+  color: var(--accent-color);
+}
+
+.icon {
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .cardImageContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .carousel {
+    height: 200vh;
+  }
+  .cardImage {
+    width: 30vw;
+  }
+}

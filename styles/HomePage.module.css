@@ -1,0 +1,113 @@
+.container {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin-top: 12vh;
+}
+
+.picture_boader {
+  border: 20px solid rgba(0, 0, 0, 0.52);
+  border-radius: 250px;
+  object-fit: cover;
+}
+
+.picture {
+  border-radius: 250px;
+  display: hidden;
+  object-fit: cover;
+}
+
+.welcome {
+  background-color: rgb(11, 187, 160);
+  border-radius: 15px 15px 15px 0px;
+  color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 120px;
+  letter-spacing: 1.3px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.1rem;
+}
+
+.subtitle {
+  color: var(--accent-color);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contacts {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.contacts li {
+  padding: 10px 0px;
+}
+
+.contacts li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
+}
+
+.contactIcon {
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons > * {
+  margin: 2rem 1.5rem;
+  padding: 0.75rem 1.25rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+}
+
+.contained {
+  background: var(--accent-color);
+  color: white;
+}
+
+.outlined {
+  border: 2px solid var(--accent-color);
+  background: transparent;
+  color: white;
+}
+
+.contained:hover,
+.outlined:hover {
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    height: 85vh;
+  }
+
+  .picture_boader {
+    border: 10px solid rgba(0, 0, 0, 0.52);
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+  }
+}
